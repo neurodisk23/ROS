@@ -2,7 +2,7 @@ path = "/2022-08-29-11-52-44.bag";
 bag = rosbag("path");
 imageBag = select(bag,'Topic','/cam_front_raw');
 imageMsgs = readMessages(imageBag);
-imageFilesPath = fullfile(tempdir,'Images');
+imageFilesPath = fullfile(tempdir,'Images'); % do a cd and you'll get the crrent_dir, change it with the name of tempdir 
 
 
 for i = 1:length(imageMsgs)
