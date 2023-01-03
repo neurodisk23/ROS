@@ -1,0 +1,5 @@
+If a bag was not closed cleanly, then the index information may be corrupted. Two steps are needed to repair the bag:
+
+rosbag reindex *.bag.active
+
+rosbag fix *.bag.active repaired.bag
